@@ -32,7 +32,7 @@ node(){
         stash allowEmpty: true, includes: 'bundle.tar.gz', name: 'buildArtifacts'
     }
     stage('Deploy') {
-        sh "sudo cp -a dist/automationdemo/* /var/www/html"
+        sh "cp -a dist/automationdemo/* /var/www/html"
     }
 }
   
